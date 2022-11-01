@@ -4,6 +4,12 @@
 # DO NOT REMOVE THIS
 theme = "hugo-theme-codex" 
 
+# BUILD
+[build]
+  noJSConfigInAssets = false
+  useResourceCacheWhen = 'fallback'
+  writeStats = false
+
 # Override these settings with your own
 title = "@BONRUS Blog"
 languageCode = "ru-ru"
