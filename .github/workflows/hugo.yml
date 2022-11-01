@@ -1,4 +1,4 @@
-name: Github-pages
+name: github-pages
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --buildDrafts
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
