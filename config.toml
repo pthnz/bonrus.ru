@@ -7,7 +7,7 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 title = "@BONRUS Blog"
 languageCode = "ru"
-baseURL = "http://pthn3.github.io/bonrus.ru/"
+baseURL = "https://bonrus.ru/"
 copyright = "© {year}"
 
 # Add your Disqus shortname here.
