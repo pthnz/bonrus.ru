@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on</title><link>/tags/</link><description>Recent content in Tags on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 02 Oct 2022 13:32:41 +0300</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitrix24</title><link>/tags/bitrix24/</link><pubDate>Sun, 02 Oct 2022 13:32:41 +0300</pubDate><guid>/tags/bitrix24/</guid><description/></item><item><title>Integration</title><link>/tags/integration/</link><pubDate>Sun, 02 Oct 2022 13:32:41 +0300</pubDate><guid>/tags/integration/</guid><description/></item><item><title>Yandex-DataLens</title><link>/tags/yandex-datalens/</link><pubDate>Sun, 02 Oct 2022 13:32:41 +0300</pubDate><guid>/tags/yandex-datalens/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on @BONRUS Blog</title>
+    <link>http://pthn3.github.io/bonrus.ru/tags/</link>
+    <description>Recent content in Tags on @BONRUS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Tue, 18 Oct 2022 11:17:15 +0300</lastBuildDate><atom:link href="http://pthn3.github.io/bonrus.ru/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active-Directory</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/active-directory/</link>
+      <pubDate>Tue, 18 Oct 2022 11:17:15 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bitrix24</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/bitrix24/</link>
+      <pubDate>Tue, 18 Oct 2022 11:17:15 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/bitrix24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integration</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/integration/</link>
+      <pubDate>Tue, 18 Oct 2022 11:17:15 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIY</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/diy/</link>
+      <pubDate>Mon, 17 Oct 2022 11:20:29 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yandex-Station</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/yandex-station/</link>
+      <pubDate>Mon, 17 Oct 2022 11:20:29 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/yandex-station/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Алиса</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/%D0%B0%D0%BB%D0%B8%D1%81%D0%B0/</link>
+      <pubDate>Mon, 17 Oct 2022 11:20:29 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/%D0%B0%D0%BB%D0%B8%D1%81%D0%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yandex-DataLens</title>
+      <link>http://pthn3.github.io/bonrus.ru/tags/yandex-datalens/</link>
+      <pubDate>Sun, 02 Oct 2022 13:32:41 +0300</pubDate>
+      
+      <guid>http://pthn3.github.io/bonrus.ru/tags/yandex-datalens/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,22 +1,426 @@
-<!doctype html><html lang><head><title>Настройка Yandex DataLens Битрикс24 |</title><meta charset=utf-8><meta name=language content="en"><meta name=description content><meta name=keywords content="Bitrix24 ,Yandex-DataLens ,Integration ,Настройка Битрикс24 ,Интеграция"><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=twitter:card content="summary"><meta name=twitter:title content="Настройка Yandex DataLens Битрикс24"><meta name=twitter:description content><meta name=twitter:site content="https://twitter.com/ruslan4109"><meta name=twitter:creator content="https://twitter.com/ruslan4109"><link rel="shortcut icon" type=image/png href=/favicon.ico><link type=text/css rel=stylesheet href=/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="><link type=text/css rel=stylesheet href=/css/custom.min.c4fe4d2880cdf4bac9d178428600806cb6f771e20f1fd359495fce556693e844.css integrity="sha256-xP5NKIDN9LrJ0XhChgCAbLb3ceIPH9NZSV/OVWaT6EQ="><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":""},"articleSection":"blog","name":"Настройка Yandex DataLens Битрикс24","headline":"Настройка Yandex DataLens Битрикс24","description":"","inLanguage":"en-US","author":"","creator":"","publisher":"","accountablePerson":"","copyrightHolder":"","copyrightYear":"2022","datePublished":"2022-10-02 13:32:41 \u002b0300 MSK","dateModified":"2022-10-02 13:32:41 \u002b0300 MSK","url":"\/blog\/bitrix24\/datalens-bitrix24\/","wordCount":"533","keywords":["Bitrix24","Yandex-DataLens","Integration","Настройка Битрикс24","Интеграция","Blog"]}</script></head><body><div class=burger__container><div class=burger aria-controls=navigation aria-label=Menu><div class="burger__meat burger__meat--1"></div><div class="burger__meat burger__meat--2"></div><div class="burger__meat burger__meat--3"></div></div></div><nav class=nav id=navigation><ul class=nav__list><li><a href=/>about</a></li><li><a class=active href=/blog>blog</a></li><li><a href=/contact/>contact</a></li></ul></nav><main><div class=flex-wrapper><div class=post__container><div class=post><header class=post__header><h1 id=post__title>Настройка Yandex DataLens Битрикс24</h1><time datetime="2022-10-02 13:32:41 +0300 MSK" class=post__date>Oct 2 2022</time></header><article class=post__content><h2>Настройка интеграции Yandex DataLens и Битрикс24</h2><h3 id=1-получить-токен-для-подключения-битрикс24-к-datalensbr>1. Получить токен для подключения Битрикс24 к DataLens.<br><a class=anchor href=#1-получить-токен-для-подключения-битрикс24-к-datalensbr>#</a></h3><ol><li><strong>Перейти в раздел CRM - Аналитика - BI-аналитика</strong>, в правой части страницы будет информация для подключения</li></ol><pre><code class=language-DataConnect>     Адрес сервера - адрес вашего портала Битрикс24.
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Настройка Yandex DataLens Битрикс24 | @BONRUS Blog</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="Bitrix24 , Yandex-DataLens , Integration , Настройка Битрикс24 , Интеграция">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Настройка Yandex DataLens Битрикс24" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/ruslan4109" />
+  <meta name="twitter:creator" content="https://twitter.com/ruslan4109" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/bonrus.ru/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/bonrus.ru/css/custom.min.c4fe4d2880cdf4bac9d178428600806cb6f771e20f1fd359495fce556693e844.css" integrity="sha256-xP5NKIDN9LrJ0XhChgCAbLb3ceIPH9NZSV/OVWaT6EQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/pthn3.github.io\/bonrus.ru\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Настройка Yandex DataLens Битрикс24",
+      "headline" : "Настройка Yandex DataLens Битрикс24",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-10-02 13:32:41 \u002b0300 MSK",
+      "dateModified" : "2022-10-02 13:32:41 \u002b0300 MSK",
+      "url" : "http:\/\/pthn3.github.io\/bonrus.ru\/blog\/bitrix24\/datalens-bitrix24\/",
+      "wordCount" : "533",
+      "keywords" : ["Bitrix24", "Yandex-DataLens", "Integration", "Настройка Битрикс24", "Интеграция", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/bonrus.ru/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/bonrus.ru/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/bonrus.ru/contact/">contact</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Настройка Yandex DataLens Битрикс24</h1>
+            <time datetime="2022-10-02 13:32:41 &#43;0300 MSK" class="post__date">Oct 2 2022</time> 
+          </header>
+          <article class="post__content">
+              
+<h2>Настройка интеграции Yandex DataLens и Битрикс24</h2>
+<h3 id="1-получить-токен-для-подключения-битрикс24-к-datalensbr">1. Получить токен для подключения Битрикс24 к DataLens.<br><a class="anchor" href="#1-получить-токен-для-подключения-битрикс24-к-datalensbr">#</a></h3>
+<ol>
+<li><strong>Перейти в раздел CRM - Аналитика - BI-аналитика</strong>, в правой части страницы будет информация для подключения</li>
+</ol>
+<pre><code class="language-DataConnect">     Адрес сервера - адрес вашего портала Битрикс24.
      Секретный ключ 
-</code></pre><p><img src=/images/datalens-bitrix24/bitrix24-connect.png alt=bi-connect></p><h3 id=2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br>2. Настройка подключения в сервисе DataLens для получения данных из Битрикс24<br><a class=anchor href=#2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br>#</a></h3><ol><li>Перейдем в сервис <a href=https://datalens.yandex.ru target=_blank rel="noreferrer noopener">Yandex DataLens</a>.</li><li>Создадим новое подключение, используя блок подключений кликнув по кнопке &ldquo;Создать подключение&rdquo;.
-<img src=/images/datalens-bitrix24/datalens-connect.png alt=datalens-connect><br></li><li>Из списка доступных сервисов, выбираем <strong>Битрикс24</strong>
-<img src=/images/datalens-bitrix24/select-bitrix24.png alt=select-bitrix24><br></li><li>В форме добавления информации для подключению (полученных в п.1) к вашему Битрикс24, параметр <strong>&ldquo;Автоматически создать дашборд, чарты и датасет над подключением&rdquo;</strong> устанавливаем.<br><img src=/images/datalens-bitrix24/datalens-connect-B24.png alt=datalens-connect-B24><br></li><li>Для проверки корректности указанных данных в форме, можно нажав кнопку <strong>&ldquo;Проверить подключение&rdquo;</strong>, если данные указаны верно рядом с кнопкой будет отображена иконка успешного подключения<br><img src=/images/datalens-bitrix24/check-connect.png alt=check-connect></li><li>Для сохранения настроек нажимаем кнопку <strong>&ldquo;Создать подключение&rdquo;</strong>, и указываем директорию для хранения и имя подключения
-<img src=/images/datalens-bitrix24/name-connect.png alt=connect-name></li></ol><h3 id=3-настройка-датасетов-в-datalens>3. Настройка датасетов в DataLens<a class=anchor href=#3-настройка-датасетов-в-datalens>#</a></h3><ol><li><p>При уставленном параметре <strong>&ldquo;Автоматически создать дашборд, чарты и датасет над подключением&rdquo;</strong> будут созданы стандартные чарты и датасеты, которые можно использовать.
-<img src=/images/datalens-bitrix24/datalens-lists.png alt=datalens-lists></p></li><li><p>Создадим датасет который будем использовать в нашем будущем чарте.</p></li><li><p>Переходим в левом меню в раздел <strong>&ldquo;Датасет&rdquo;</strong>.
-<img src=/images/datalens-bitrix24/dataset-lists.png alt=dataset-lists></p></li><li><p>Нажимаем кнопку <strong>&ldquo;Создать&rdquo;</strong> в открывшемся слайдере задаем параметры нашего датасета.
-<img src=/images/datalens-bitrix24/create-dataset.png alt=dataset-create.png></p></li><li><p>Выбираем подключение из которого будет выполняться выборка данных. Выбираем из списка ранее добавленое подключение.
-<img src=/images/datalens-bitrix24/dataset-lists-add.png alt=dataset-lists-add>
-<img src=/images/datalens-bitrix24/dataset-add.png alt=dataset-add></p></li><li><p>После добавления подключения в датасет, будет отображен список доступных таблицы для выборки данных.</p></li></ol><ul><li><strong>Описание таблиц:</strong><table><thead><tr><th style=text-align:left>Название таблицы</th><th style=text-align:right>Описание</th></tr></thead><tbody><tr><td style=text-align:left>crm_deal</td><td style=text-align:right>таблица c данными по сделкам</td></tr><tr><td style=text-align:left>crm_lead</td><td style=text-align:right>таблица с данными по лидам</td></tr><tr><td style=text-align:left>crm_company</td><td style=text-align:right>таблица с данными по компаниям</td></tr><tr><td style=text-align:left>crm_contact</td><td style=text-align:right>таблица с данными по контактами</td></tr><tr><td style=text-align:left>crm_deal_stage_history</td><td style=text-align:right>таблица с историей по стадиям сделок</td></tr><tr><td style=text-align:left>crm_lead_status_history</td><td style=text-align:right>таблица с историей по стадиям лидов</td></tr><tr><td style=text-align:left>socialnetwork_group</td><td style=text-align:right>таблица с перечнем групп <strong>&ldquo;Модуля социальная сеть&rdquo;</strong></td></tr><tr><td style=text-align:left>telephony_call</td><td style=text-align:right>таблица с данными по звонкам</td></tr><tr><td style=text-align:left>crm_activity</td><td style=text-align:right>таблица с активностям сущностей CRM</td></tr></tbody></table></li></ul><p><img src=/images/datalens-bitrix24/dataset-table-list.png alt=dataset-table-list></p><ul><li><p>Переходим на вкладку <strong>&ldquo;Поля&rdquo;</strong>, на данной вкладке будут отображены все доступные поля из таблицы:</p><ul><li>Имя поля</li><li>Источник поля</li><li>Тип</li><li>Агрегация</li><li>Описание поля</li></ul></li><li><p>Данные в поля будут загружены автоматически согласно данным вашего Битрикс24, все поля изменяемы есть возможность настроить агрегацию данных прямо в датасете</p></li></ul><ol start=7><li>Для редактирования полей выбрать нужное поле, двойным кликом перейти в режим редактирования. Откроется форма редактирования поля, доступные поля для редактирования:</li></ol><ul><li>ID поля</li><li>Источник</li><li>Поле источника</li><li>Тип поля <strong>(доступные типы полей)</strong>:<ul><li>Дата</li><li>Дата и время</li><li>Дробное число</li><li>Логический</li><li>Строка</li><li>Целое число</li></ul></li><li>Агрегация <strong>(список функций)</strong>:<ul><li>Нет (не выполнять агрегацию значений)</li><li>Количество (сумма значений)</li><li>Количество уникальные (сумма уникальных значений)</li><li>Максимум (максимальное значение)</li><li>Минимум (минимальное значение)</li><li>Среднее (среднее значение)
-<img src=/images/datalens-bitrix24/dataset-fields-list.png alt=ataset-fields-list></li></ul></li></ul><ol start=8><li>Добавление параметров датасета, это переменная датасета или чарта, которая может заменять константные значения в вычисляемых полях.</li></ol><ul><li>Для добавления нажать кнопку <strong>&ldquo;Добавить&rdquo;</strong>, в форме добавления указать следующие параметры:<ul><li>Название переменной (не допускаются значения которые начинаются с &ldquo;_&rdquo;, зарезервированы значения <strong>&ldquo;tab, state, mode, focus, grid, tz, from, to.&rdquo;</strong>, длина не более 36 символов)</li><li>Тип</li><li>Значение по умолчанию
-<img src=/images/datalens-bitrix24/dataset-params.png alt=dataset-params>
-<img src=/images/datalens-bitrix24/dataset-fields-add.png alt=dataset-fields-add></li></ul></li></ul><ol start=9><li>По завершению настроек датасета нажимаем кнопку &ldquo;Сохранить&rdquo;.</li></ol><h3 id=4-настройка-чартов-в-datalens>4. Настройка чартов в DataLens<a class=anchor href=#4-настройка-чартов-в-datalens>#</a></h3><ol><li><p>Чарт — это визуализация данных из <strong>датасета</strong> в виде таблицы, диаграммы или картограммы, переходим в раздел Чарты.
+</code></pre>
+<p><img src="/images/datalens-bitrix24/bitrix24-connect.png" alt="bi-connect"></p>
+<h3 id="2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br">2. Настройка подключения в сервисе DataLens для получения данных из Битрикс24 <br><a class="anchor" href="#2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br">#</a></h3>
+<ol>
+<li>Перейдем в сервис <a href="https://datalens.yandex.ru" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Yandex DataLens</a>.</li>
+<li>Создадим новое подключение, используя блок подключений кликнув по кнопке &ldquo;Создать подключение&rdquo;.
+<img src="/images/datalens-bitrix24/datalens-connect.png" alt="datalens-connect"><br></li>
+<li>Из списка доступных сервисов, выбираем <strong>Битрикс24</strong>
+<img src="/images/datalens-bitrix24/select-bitrix24.png" alt="select-bitrix24"><br></li>
+<li>В форме добавления информации для подключению (полученных в п.1) к вашему Битрикс24, параметр <strong>&ldquo;Автоматически создать дашборд, чарты и датасет над подключением&rdquo;</strong> устанавливаем.<br>
+<img src="/images/datalens-bitrix24/datalens-connect-B24.png" alt="datalens-connect-B24"><br></li>
+<li>Для проверки корректности указанных данных в форме, можно нажав кнопку <strong>&ldquo;Проверить подключение&rdquo;</strong>, если данные указаны верно рядом с кнопкой будет отображена иконка успешного подключения<br>
+<img src="/images/datalens-bitrix24/check-connect.png" alt="check-connect"></li>
+<li>Для сохранения настроек нажимаем кнопку <strong>&ldquo;Создать подключение&rdquo;</strong>, и указываем директорию для хранения и имя подключения
+<img src="/images/datalens-bitrix24/name-connect.png" alt="connect-name"></li>
+</ol>
+<h3 id="3-настройка-датасетов-в-datalens">3. Настройка датасетов в DataLens<a class="anchor" href="#3-настройка-датасетов-в-datalens">#</a></h3>
+<ol>
+<li>
+<p>При уставленном параметре <strong>&ldquo;Автоматически создать дашборд, чарты и датасет над подключением&rdquo;</strong> будут созданы стандартные чарты и датасеты, которые можно использовать.
+<img src="/images/datalens-bitrix24/datalens-lists.png" alt="datalens-lists"></p>
+</li>
+<li>
+<p>Создадим датасет который будем использовать в нашем будущем чарте.</p>
+</li>
+<li>
+<p>Переходим в левом меню в раздел <strong>&ldquo;Датасет&rdquo;</strong>.
+<img src="/images/datalens-bitrix24/dataset-lists.png" alt="dataset-lists"></p>
+</li>
+<li>
+<p>Нажимаем кнопку <strong>&ldquo;Создать&rdquo;</strong> в открывшемся слайдере задаем параметры нашего датасета.
+<img src="/images/datalens-bitrix24/create-dataset.png" alt="dataset-create.png"></p>
+</li>
+<li>
+<p>Выбираем подключение из которого будет выполняться выборка данных. Выбираем из списка ранее добавленое подключение.
+<img src="/images/datalens-bitrix24/dataset-lists-add.png" alt="dataset-lists-add">
+<img src="/images/datalens-bitrix24/dataset-add.png" alt="dataset-add"></p>
+</li>
+<li>
+<p>После добавления подключения в датасет, будет отображен список доступных таблицы для выборки данных.</p>
+</li>
+</ol>
+<ul>
+<li><strong>Описание таблиц:</strong>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Название таблицы</th>
+<th style="text-align:right">Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">crm_deal</td>
+<td style="text-align:right">таблица c данными по сделкам</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_lead</td>
+<td style="text-align:right">таблица с данными по лидам</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_company</td>
+<td style="text-align:right">таблица с данными по компаниям</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_contact</td>
+<td style="text-align:right">таблица с данными по контактами</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_deal_stage_history</td>
+<td style="text-align:right">таблица с историей по стадиям сделок</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_lead_status_history</td>
+<td style="text-align:right">таблица с историей по стадиям лидов</td>
+</tr>
+<tr>
+<td style="text-align:left">socialnetwork_group</td>
+<td style="text-align:right">таблица с перечнем групп <strong>&ldquo;Модуля социальная сеть&rdquo;</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">telephony_call</td>
+<td style="text-align:right">таблица с данными по звонкам</td>
+</tr>
+<tr>
+<td style="text-align:left">crm_activity</td>
+<td style="text-align:right">таблица с активностям сущностей CRM</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p><img src="/images/datalens-bitrix24/dataset-table-list.png" alt="dataset-table-list"></p>
+<ul>
+<li>
+<p>Переходим на вкладку <strong>&ldquo;Поля&rdquo;</strong>, на данной вкладке будут отображены все доступные поля из таблицы:</p>
+<ul>
+<li>Имя поля</li>
+<li>Источник поля</li>
+<li>Тип</li>
+<li>Агрегация</li>
+<li>Описание поля</li>
+</ul>
+</li>
+<li>
+<p>Данные в поля будут загружены автоматически согласно данным вашего Битрикс24, все поля изменяемы есть возможность настроить агрегацию данных прямо в датасете</p>
+</li>
+</ul>
+<ol start="7">
+<li>Для редактирования полей выбрать нужное поле, двойным кликом перейти в режим редактирования. Откроется форма редактирования поля, доступные поля для редактирования:</li>
+</ol>
+<ul>
+<li>ID поля</li>
+<li>Источник</li>
+<li>Поле источника</li>
+<li>Тип поля <strong>(доступные типы полей)</strong>:
+<ul>
+<li>Дата</li>
+<li>Дата и время</li>
+<li>Дробное число</li>
+<li>Логический</li>
+<li>Строка</li>
+<li>Целое число</li>
+</ul>
+</li>
+<li>Агрегация <strong>(список функций)</strong>:
+<ul>
+<li>Нет (не выполнять агрегацию значений)</li>
+<li>Количество (сумма значений)</li>
+<li>Количество уникальные (сумма уникальных значений)</li>
+<li>Максимум (максимальное значение)</li>
+<li>Минимум (минимальное значение)</li>
+<li>Среднее (среднее значение)
+<img src="/images/datalens-bitrix24/dataset-fields-list.png" alt="ataset-fields-list"></li>
+</ul>
+</li>
+</ul>
+<ol start="8">
+<li>Добавление параметров датасета, это переменная датасета или чарта, которая может заменять константные значения в вычисляемых полях.</li>
+</ol>
+<ul>
+<li>Для добавления нажать кнопку <strong>&ldquo;Добавить&rdquo;</strong>, в форме добавления указать следующие параметры:
+<ul>
+<li>Название переменной (не допускаются значения которые начинаются с &ldquo;_&rdquo;, зарезервированы значения <strong>&ldquo;tab, state, mode, focus, grid, tz, from, to.&rdquo;</strong>, длина не более 36 символов)</li>
+<li>Тип</li>
+<li>Значение по умолчанию
+<img src="/images/datalens-bitrix24/dataset-params.png" alt="dataset-params">
+<img src="/images/datalens-bitrix24/dataset-fields-add.png" alt="dataset-fields-add"></li>
+</ul>
+</li>
+</ul>
+<ol start="9">
+<li>По завершению настроек датасета нажимаем кнопку &ldquo;Сохранить&rdquo;.</li>
+</ol>
+<h3 id="4-настройка-чартов-в-datalens">4. Настройка чартов в DataLens<a class="anchor" href="#4-настройка-чартов-в-datalens">#</a></h3>
+<ol>
+<li>
+<p>Чарт — это визуализация данных из <strong>датасета</strong> в виде таблицы, диаграммы или картограммы, переходим в раздел Чарты.
 У нас уже имеются предустановленные чарты которые мы может использовать. Если необходимо создать свой чарт нажимаем кнопку <strong>&ldquo;Создать&rdquo;</strong>.
-<img src=/images/datalens-bitrix24/chart-lists.png alt=chart-lists></p></li><li><p>В форме указываем ранее созданный нами датасет на основе которого хотим построить наш чарт
-<img src=/images/datalens-bitrix24/chart-add.png alt=chart-add></p></li><li><p>Выбираем тип диаграммы для отображения данных, доступные типы диаграмм:</p></li></ol><ul><li>Линейная диаграмма</li><li>Накопительная диаграмма с областями</li><li>Нормированная диаграмма с областями</li><li>Столбчатая диаграмма</li><li>Нормированная столбчатая диаграмма</li><li>Линейчатая диаграмма</li><li>Нормированная линейчатая диаграмма</li><li>Точечная диаграмма</li><li>Круговая диаграмма</li><li>Кольцевая диаграмма
-<img src=/images/datalens-bitrix24/chart-settings.png alt=chart-settings></li></ul><ol start=4><li></li></ol></article><ul class=tags__list><li class=tag__item><a class=tag__link href=/tags/bitrix24/>Bitrix24</a></li><li class=tag__item><a class=tag__link href=/tags/yandex-datalens/>Yandex-DataLens</a></li><li class=tag__item><a class=tag__link href=/tags/integration/>Integration</a></li></ul><div class=pagination><a class=pagination__item href=/blog/bitrix24/telephony-bitrix24/><span class=pagination__label>Next Post</span>
-<span class=pagination__title>Телефония в Bitrix24</span></a></div><footer class=post__footer><div class=social-icons><a class=social-icons__link title=Twitter href=https://twitter.com/ruslan4109 target=_blank rel="me noopener"><div class=social-icons__icon style=background-image:url(svg/twitter.svg)></div></a><a class=social-icons__link title=GitHub href=https://github.com/pthn3 target=_blank rel="me noopener"><div class=social-icons__icon style=background-image:url(svg/github.svg)></div></a></div><p></p></footer></div></div><div class=toc-container><div class=toc-post-title>Настройка Yandex DataLens Битрикс24</div><nav id=TableOfContents><ul><li><ul><li><a href=#1-получить-токен-для-подключения-битрикс24-к-datalensbr>1. Получить токен для подключения Битрикс24 к DataLens.<br></a></li><li><a href=#2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br>2. Настройка подключения в сервисе DataLens для получения данных из Битрикс24<br></a></li><li><a href=#3-настройка-датасетов-в-datalens>3. Настройка датасетов в DataLens</a></li><li><a href=#4-настройка-чартов-в-datalens>4. Настройка чартов в DataLens</a></li></ul></li></ul></nav></div></div></main><script src=/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin=anonymous></script>
-<script src=https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js></script>
-<script src=https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js data-autoloader-path=https://unpkg.com/prismjs@1.20.0/components/></script>
-<script src=/js/table-of-contents.js></script></body></html>
+<img src="/images/datalens-bitrix24/chart-lists.png" alt="chart-lists"></p>
+</li>
+<li>
+<p>В форме указываем ранее созданный нами датасет на основе которого хотим построить наш чарт
+<img src="/images/datalens-bitrix24/chart-add.png" alt="chart-add"></p>
+</li>
+<li>
+<p>Выбираем тип диаграммы для отображения данных, доступные типы диаграмм:</p>
+</li>
+</ol>
+<ul>
+<li>Линейная диаграмма</li>
+<li>Накопительная диаграмма с областями</li>
+<li>Нормированная диаграмма с областями</li>
+<li>Столбчатая диаграмма</li>
+<li>Нормированная столбчатая диаграмма</li>
+<li>Линейчатая диаграмма</li>
+<li>Нормированная линейчатая диаграмма</li>
+<li>Точечная диаграмма</li>
+<li>Круговая диаграмма</li>
+<li>Кольцевая диаграмма
+<img src="/images/datalens-bitrix24/chart-settings.png" alt="chart-settings"></li>
+</ul>
+<ol start="4">
+<li></li>
+</ol>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://pthn3.github.io/bonrus.ru/tags/bitrix24/">Bitrix24</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="http://pthn3.github.io/bonrus.ru/tags/yandex-datalens/">Yandex-DataLens</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="http://pthn3.github.io/bonrus.ru/tags/integration/">Integration</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+
+  
+    <a class="pagination__item" href="http://pthn3.github.io/bonrus.ru/blog/bitrix24/telephony-bitrix24/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Телефония в Bitrix24</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/ruslan4109"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://pthn3.github.io/bonrus.ru/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/pthn3"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://pthn3.github.io/bonrus.ru/svg/github.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Настройка Yandex DataLens Битрикс24</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-получить-токен-для-подключения-битрикс24-к-datalensbr">1. Получить токен для подключения Битрикс24 к DataLens.<br></a></li>
+        <li><a href="#2-настройка-подключения-в-сервисе-datalens-для-получения-данных-из-битрикс24-br">2. Настройка подключения в сервисе DataLens для получения данных из Битрикс24 <br></a></li>
+        <li><a href="#3-настройка-датасетов-в-datalens">3. Настройка датасетов в DataLens</a></li>
+        <li><a href="#4-настройка-чартов-в-datalens">4. Настройка чартов в DataLens</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/bonrus.ru/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
