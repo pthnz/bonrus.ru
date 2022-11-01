@@ -1,0 +1,6 @@
+#IDE/OS
+
+.idea
+
+#HUGO
+.hugo_build.lock
