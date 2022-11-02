@@ -23,7 +23,7 @@ jobs:
 
       # Creates ./public directory
       - name: Build
-        run: hugo --minify
+        run: hugo server
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
