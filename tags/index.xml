@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on @BONRUS Blog</title>
-    <link>https://pthn3.github.io/bonrus.ru/tags/</link>
+    <link>https://pthn3.github.io/tags/</link>
     <description>Recent content in Tags on @BONRUS Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <copyright>© {year}</copyright><atom:link href="https://pthn3.github.io/bonrus.ru/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright><atom:link href="https://pthn3.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
