@@ -1,8 +1,13 @@
 ---
-title: "Телефония в Bitrix24"
-date: 2022-10-02T13:37:48+03:00
+title: "Настройка телефонии в Bitrix24"
+date: 2022-10-25T23:03:37+03:00
+slug: "настройка телефонии в Битрикс24"
+description: ""
+keywords: []
 draft: true
-offTheRecord: true
+tags: []
+math: false
+toc: true
 ---
  #H1
 

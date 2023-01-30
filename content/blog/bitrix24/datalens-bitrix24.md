@@ -2,7 +2,7 @@
 title: "Настройка Yandex DataLens Битрикс24"
 date: 2022-10-02T13:32:41+03:00
 draft: true
-slug: ""
+slug: "настройка интеграции с DataLens"
 description: ""
 keywords: [Bitrix24,Yandex-DataLens,Integration,Настройка Битрикс24,Интеграция]
 tags: [Bitrix24,Yandex-DataLens,Integration]        

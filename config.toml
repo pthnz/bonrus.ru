@@ -7,6 +7,7 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 title = "@BONRUS Blog"
 languageCode = "ru"
+defaultcontentlanguage = "ru"
 baseURL = "https://pthn3.github.io/"
 copyright = "© {year}"
 
@@ -23,7 +24,7 @@ copyright = "© {year}"
   dateFormat = "Jan 2 2006"
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
-  twitter = "https://twitter.com/ruslan4109"
+  #twitter = "https://twitter.com/ruslan4109"
   github = "https://github.com/pthn3"
   email = "mailto:r.bondarenko1992@yandex.ru"
   # mastodon = "https://mastodon.social/@nickname"
@@ -36,7 +37,7 @@ copyright = "© {year}"
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Mastodon", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Twitter", "GitHub"]
+  iconOrder = ["Email", "GitHub"]
 
   # Metadata for Twitter cards, defaults to params.twitter
   # twitterSite = "@ruslan4109"
