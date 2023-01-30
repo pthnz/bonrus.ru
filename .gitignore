@@ -4,3 +4,6 @@
 
 #HUGO
 .hugo_build.lock
+
+#Old hugo deploy file
+.github/workflows/hugo-ci.yml
