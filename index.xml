@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>@BONRUS Blog</title>
-    <link>https://pthn3.github.io/</link>
-    <description>Recent content on @BONRUS Blog</description>
+    <title>Bitrix24 Blog | @BONRUS</title>
+    <link>https://pthnz.github.io/</link>
+    <description>Recent content on Bitrix24 Blog | @BONRUS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <copyright>© {year}</copyright><atom:link href="https://pthn3.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright><atom:link href="https://pthnz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacts Page</title>
-      <link>https://pthn3.github.io/contact/</link>
+      <link>https://pthnz.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pthn3.github.io/contact/</guid>
+      <guid>https://pthnz.github.io/contact/</guid>
       <description></description>
     </item>
     

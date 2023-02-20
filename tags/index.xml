@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on @BONRUS Blog</title>
-    <link>https://pthn3.github.io/tags/</link>
-    <description>Recent content in Tags on @BONRUS Blog</description>
+    <title>Tags on Bitrix24 Blog | @BONRUS</title>
+    <link>https://pthnz.github.io/tags/</link>
+    <description>Recent content in Tags on Bitrix24 Blog | @BONRUS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <copyright>© {year}</copyright><atom:link href="https://pthn3.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright><atom:link href="https://pthnz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
