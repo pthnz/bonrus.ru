@@ -1,5 +1,5 @@
 ---
 heading: "Hi, I'm BONRUS"
-subheading: "This is my blog."
+subheading: "Blog about Bitrix24."
 handle: "bonrus"
 ---
