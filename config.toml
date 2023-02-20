@@ -5,10 +5,10 @@
 theme = "hugo-theme-codex" 
 
 # Override these settings with your own
-title = "@BONRUS Blog"
+title = "Bitrix24 Blog | @BONRUS"
 languageCode = "ru"
 defaultcontentlanguage = "ru"
-baseURL = "https://pthn3.github.io/"
+baseURL = "https://pthnz.github.io/"
 copyright = "© {year}"
 
 # Add your Disqus shortname here.
@@ -25,7 +25,7 @@ copyright = "© {year}"
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
   #twitter = "https://twitter.com/ruslan4109"
-  github = "https://github.com/pthn3"
+  github = "https://github.com/pthnz"
   email = "mailto:r.bondarenko1992@yandex.ru"
   # mastodon = "https://mastodon.social/@nickname"
   # facebook = "https://facebook.com/<your handle>"
