@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Полезные регулярные выражения | Bitrix24 Blog | @BONRUS</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Список полезных регулярных выражений">
+  <meta name="keywords" content="req , регулярки , регулярные выражения , валидация email">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="@BONRUS Blog">
+<meta name="application-name" content="@BONRUS Blog">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.c4fe4d2880cdf4bac9d178428600806cb6f771e20f1fd359495fce556693e844.css" integrity="sha256-xP5NKIDN9LrJ0XhChgCAbLb3ceIPH9NZSV/OVWaT6EQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/pthnz.github.io\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Полезные регулярные выражения",
+      "headline" : "Полезные регулярные выражения",
+      "description" : "Список полезных регулярных выражений",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-11-08 17:16:09 \u002b0300 \u002b0300",
+      "dateModified" : "2022-11-08 17:16:09 \u002b0300 \u002b0300",
+      "url" : "https:\/\/pthnz.github.io\/blog\/dev\/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F\/",
+      "wordCount" : "1496",
+      "keywords" : ["req", "регулярки", "регулярные выражения", "валидация email", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/contact/">contact</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Полезные регулярные выражения</h1>
+            <time datetime="2022-11-08 17:16:09 &#43;0300 &#43;0300" class="post__date">Nov 8 2022</time> 
+          </header>
+          <article class="post__content">
+              
+<h3 id="пользовательские-данные">Пользовательские данные<a class="anchor" href="#пользовательские-данные">#</a></h3>
+<h3 id="1-юзернейм">1. Юзернейм<a class="anchor" href="#1-юзернейм">#</a></h3>
+<p>Стандартный формат юзернейма – цифры, строчные буквы, символы - и _. Разумная длина – от 3 до 16 знаков. В зависимости от ваших конкретных потребностей вы можете изменять набор символов (например, разрешить символ *) и длину строки.</p>
+<pre><code class="language-phpregexp">/^[a-z0-9_-]{3,16}$/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('normal_login-123'); // true
+re.test('IncorrectLogin'); // false
+re.test('inc*rrect_l*gin'); // false
+</code></pre>
+<p>Что используем:
+Символы ^ и $ указывают на начало и конец строки, так что введенный юзернейм будет проверен на совпадение полностью от первого до последнего символа.</p>
+<h3 id="2-валидация-email">2. Валидация email<a class="anchor" href="#2-валидация-email">#</a></h3>
+<p>Проверка адреса электронной почты на корректность – одна из самых частых задач веб-разработчика. Без этого не обходятся ни разнообразные формы подписки, ни авторизация.</p>
+<p>Для валидации email существует множество различных регулярок. Вот одна из них – не самая большая и не самая сложная, но достаточно точная для быстрой проверки адреса:</p>
+<pre><code class="language-phpregexp">/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('correct-email@mail.com'); // true
+re.test('CORRECT.email@mail123.com'); //true
+re.test('incorrect-email@mail'); //false
+</code></pre>
+<p>Что используем:
+Флаг i в регулярных выражений обеспечивает регистронезависимость сравнения.</p>
+<h3 id="3-номер-телефона">3. Номер телефона<a class="anchor" href="#3-номер-телефона">#</a></h3>
+<p>Проверяя номер телефона, обязательно учитывайте общепринятые форматы, так как в разных странах их принято записывать по-разному. Например, для американского стиля подойдет вот такая регулярка:</p>
+<pre><code class="language-phpregexp">/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('(212) 348-2626'); // true
+re.test('+1 832-393-1000'); // true
+re.test('+1 202-456-11-11'); // false
+</code></pre>
+<p>Что используем:
+Квантификатор ? соответствует одному предыдущему символу или его отсутствию.</p>
+<h3 id="4-надёжность-пароля">4. Надёжность пароля<a class="anchor" href="#4-надёжность-пароля">#</a></h3>
+<p>Часто встречаете на различных сервисах требование придумать сложный пароль? Кто и как определяет требуемую степень сложности? На самом деле, для этого есть некоторые стандарты: минимальная длина, разный регистр символов, наличие букв, цифр и специальных знаков.</p>
+<p>Чтобы обеспечить ваших пользователей надежными паролями, можете воспользоваться вот таким выражением (или составить собственные регулярки со специфическими требованиями):</p>
+<pre><code class="language-phpregexp">/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&amp;*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('qwerty'); // false
+re.test('qwertyuiop'); // false
+re.test('abcABC123$'); // true
+</code></pre>
+<p>Что используем:
+Оператор ?= внутри скобочной группы позволяет искать совпадения &ldquo;просматривая вперед&rdquo; переданную строку и не включать найденный фрагмент в результирующий массив.</p>
+<p>Подробнее о надежности паролей вы можете узнать из этого руководства.</p>
+<h3 id="5-почтовый-индекс-zip-code">5. Почтовый индекс (zip-code)<a class="anchor" href="#5-почтовый-индекс-zip-code">#</a></h3>
+<p>Формат почтового индекса, как и телефона, зависит от конкретного государства.</p>
+<p>В России все просто: шесть цифр подряд без разделителей.</p>
+<pre><code class="language-phpregexp">/^\d{6}$/
+</code></pre>
+<p>Американский zip-code может состоять из 5 символов или в расширенном формате ZIP+4 – из 9.</p>
+<pre><code class="language-phpregexp">/^\d{5}(?:[-\s]\d{4})?$/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('75457'); // true
+re.test('98765-4321'); // true
+</code></pre>
+<p>Что используем:
+Последовательность ?: внутри скобочной группы исключает ее из запоминания.</p>
+<h3 id="6-номер-кредитной-карты">6. Номер кредитной карты<a class="anchor" href="#6-номер-кредитной-карты">#</a></h3>
+<p>Разумеется, при проверке номера платежной карты не стоит полагаться на регулярные выражения. Однако с их помощью вы можете сразу же отсеять очевидно неподходящие последовательности и не нагружать сервер лишним запросом.</p>
+<p>С помощью вот такой длинной регулярки вы можете поддерживать сразу несколько платежных систем:</p>
+<pre><code class="language-phpregexp">/^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/
+</code></pre>
+<p>Подробнее разобраться, откуда что взялось, вы можете здесь.</p>
+<p>Что используем:
+Вертикальная черта | в регулярных выражениях обозначает альтернацию, то есть выбор одного варианта из нескольких.</p>
+<p>Распространенные форматы</p>
+<h3 id="7-начальные-и-конечные-пробелы">7. Начальные и конечные пробелы<a class="anchor" href="#7-начальные-и-конечные-пробелы">#</a></h3>
+<p>Пробелы в начале и конце строки обычно не несут никакой смысловой нагрузки, но могут повлиять на анализ и обработку данных, поэтому от них следует сразу же избавляться.</p>
+<pre><code class="language-phpregexp">/^[ \s]+|[ \s]+$/g
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let str = &quot; hello &quot;;
+console.log(str.length); // 7
+str = str.replace(re, '');
+console.log(str.length); // 5
+</code></pre>
+<p>Что используем:
+Квантификатор + соответствует инструкции {1,} – один и более символов.</p>
+<h3 id="8-дата">8. Дата<a class="anchor" href="#8-дата">#</a></h3>
+<p>С датами приходится работать очень часто, а форматов записи у них великое множество. Прежде чем начинать обработку, имеет смысл проверить, соответствует ли вид переданной строки требуемому.</p>
+<p>Вот такое регулярное выражение поддерживает несколько форматов дат – с полными и краткими числами (5-1-91 и 05-01-1991) и разными разделителями (точка, прямой или обратный слеш).</p>
+<pre><code class="language-phpregexp">/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/
+</code></pre>
+<p>Здесь учитываются даже високосные годы!</p>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('29-02-2000'); // true
+re.test('29-02-2001'); // false
+</code></pre>
+<p>Что используем:
+Последовательности вида \1, \2 и так далее – это обратные ссылки на скобочные группы, определяющие вид разделителя. Благодаря им можно отсеять даты с разными разделителями:</p>
+<pre><code class="language-javascript">re.test('10-10/2010'); // false
+</code></pre>
+<h3 id="9-ipv4">9. IPv4<a class="anchor" href="#9-ipv4">#</a></h3>
+<p>Адрес IP используется для идентификации конкретного компьютера в интернете Он состоит из четырех групп цифр (байтов), разделенных точками (192.0.2.235).</p>
+<pre><code class="language-phpregexp">/\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/
+</code></pre>
+<p>Что используем:
+Класс \b означает &ldquo;границу слова&rdquo; и имеет нулевую ширину (то есть это не отдельный символ).</p>
+<h3 id="10-ipv6">10. IPv6<a class="anchor" href="#10-ipv6">#</a></h3>
+<p>IPv6 – это новый, более сложный синтаксис IP-протокола. Выражение для проверки на этот формат выглядит куда страшнее, хотя на самом деле разница заключается только в поддержке шестнадцатеричных чисел:</p>
+<pre><code class="language-phpregexp">(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))
+</code></pre>
+<h3 id="11-base64">11. Base64<a class="anchor" href="#11-base64">#</a></h3>
+<p>Base64 – достаточно распространенный формат кодирования бинарных данных, который часто используется, например, в email-рассылках.</p>
+<p>Для валидации строки в этом формате можно использовать следующее регулярное выражение:</p>
+<pre><code class="language-phpregexp">^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$
+</code></pre>
+<h3 id="12-isbn">12. ISBN<a class="anchor" href="#12-isbn">#</a></h3>
+<p>ISBN – международная номенклатура для печатных книг. Номер может состоять из 10 (ISBN-10) или 13 цифр (ISBN-13). На самих книгах ISBN обычно разделен дефисами на несколько групп (код страны, издательства и самой книги), но для проверки и использования их следует удалять.</p>
+<p>Это регулярное выражение позволяет проверить оба формата сразу:</p>
+<pre><code class="language-phpregexp">/\b(?:ISBN(?:: ?| ))?((?:97[89])?\d{9}[\dx])\b/i
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('ISBN 9781106998966'); // true
+re.test('1106998966'); // true
+re.test('110699896x'); // true
+</code></pre>
+<p>Числа</p>
+<h3 id="13-проверка-на-число">13. Проверка на число<a class="anchor" href="#13-проверка-на-число">#</a></h3>
+<p>Очень простая проверка строки на число с помощью регулярок:</p>
+<pre><code class="language-phpregexp">/^\d{1,}$/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('13'); // true
+re.test('23yy'); // false
+</code></pre>
+<h3 id="14-разделитель-разрядов">14. Разделитель разрядов<a class="anchor" href="#14-разделитель-разрядов">#</a></h3>
+<p>Задача разбить большое число на разряды по три цифры встречается в разработке довольно часто. Оказывается это очень легко сделать с помощью регулярок.</p>
+<pre><code class="language-phpregexp">/\d{1,3}(?=(\d{3})+(?!\d))/g
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">'1234567890'.replace(re, '$&amp;,'); // 1,234,567,890
+</code></pre>
+<p>Что используем:
+Комбинация $&amp; в строке замены позволяет подставить найденную комбинацию.</p>
+<h3 id="15-цена">15. Цена<a class="anchor" href="#15-цена">#</a></h3>
+<p>Цены могут быть представлены во множестве различных форматов. Универсального регулярного выражения для них, скорее всего, не существует, но цену в долларах из строки извлечь очень просто.</p>
+<p>Эта регулярка предполагает, что для разделения разрядов числа используются запятые, а дробная часть отделена точкой:</p>
+<pre><code class="language-phpregexp">/(\$[0-9,]+(\.[0-9]{2})?)/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let price = 'price $5,555.55'.match(re)[0]; '$5,555.55
+</code></pre>
+<p>Что используем:
+Комбинация {2} означает, что символ из диапазона [0-9] должен быть повторен ровно 2 раза (дробная часть цены).</p>
+<p>Файлы и URL</p>
+<h3 id="16-сопоставить-строку-url">16. Сопоставить строку URL<a class="anchor" href="#16-сопоставить-строку-url">#</a></h3>
+<p>Если вам необходимо проверить, является ли полученная строка URL-адресом, вы можете воспользоваться вот такой регуляркой:</p>
+<pre><code class="language-phpregexp">/[-a-zA-Z0-9@:%_\+.~#?&amp;\/=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&amp;\/=]*)?/gi
+</code></pre>
+<p>Она подойдет для адресов с различными протоколами (HTTP, HTTPS, FTP) и даже без протокола.</p>
+<p>JS:</p>
+<pre><code class="language-javascript">re.test('https://yandex.ru'); // true
+re.test('yandex.ru'); // true
+re.test('hello world'); // false
+</code></pre>
+<h3 id="17-извлечение-домена">17. Извлечение домена<a class="anchor" href="#17-извлечение-домена">#</a></h3>
+<p>В URL-адресе много частей: протокол, домен, поддомены, путь к странице и строка запроса. С помощью регулярок можно отбросить все лишнее и получить только домен:</p>
+<pre><code class="language-phpregexp">/https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let domain = 'https://proglib.io'.match(re);
+console.log(domain[1]); // proglib
+</code></pre>
+<p>Что используем:
+Метод match возвращает объект с данными совпадения. Под индексом 1 в нем хранится совпадение, соответствующее первой скобочной группе.</p>
+<h3 id="18-расширения">18. Расширения<a class="anchor" href="#18-расширения">#</a></h3>
+<p>Одна строчка регулярного выражения позволяет быстро и просто получить расширение файла, с которым вам предстоит работать:</p>
+<pre><code class="language-phpregexp">/^(?:.*\.(?=(htm|html|class|js)$))?[^.]*$/i
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let file1 = 'script.js'.match(re)[1]; // js
+let file2 = 'hello'.match(re) [1]; // undefined
+</code></pre>
+<p>Разумеется, при необходимости сюда можно добавлять другие расширения.</p>
+<h3 id="19-протокол">19. Протокол<a class="anchor" href="#19-протокол">#</a></h3>
+<p>Иногда требуется извлечь протокол полученной ссылки. Регулярные выражения и тут облегчают жизнь:</p>
+<pre><code class="language-phpregexp">/^([a-zA-Z]+):\/\//
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let protocol = 'https://proglib.io/'.match(re)[0]; // https
+</code></pre>
+<h3 id="20-youtube">20. YouTube<a class="anchor" href="#20-youtube">#</a></h3>
+<p>Получение ID видео на YouTube:</p>
+<pre><code class="language-phpregexp">/https:\/\/(?:youtu\.be\/|(?:[a-z]{2,3}\.)?youtube\.com\/watch(?:\?|#\!)v=)([\w-]{11}).*/gi
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.exec('https://www.youtube.com/watch?v=JbgvaQ_rM4I')[1]; // JbgvaQ_rM4I
+</code></pre>
+<p>Что используем:
+Метод exec объекта регулярного выражения работает почти так же, как метод match строки.</p>
+<p>HTML и CSS</p>
+<h3 id="21-hex-цвета">21. HEX-цвета<a class="anchor" href="#21-hex-цвета">#</a></h3>
+<p>Веб-разработчику часто приходится иметь дело с цветами, заданными в шестнадцатеричном формате. Регулярки позволяют легко извлекать такие цвета из строки:</p>
+<pre><code class="language-phpregexp">/\#([a-fA-F]|[0-9]){3, 6}/
+</code></pre>
+<p>Крутой рецепт, правда? :)</p>
+<h3 id="22-адрес-изображения">22. Адрес изображения<a class="anchor" href="#22-адрес-изображения">#</a></h3>
+<p>Для получения адреса изображения обычно используется DOM-метод img.getAttribute(&lsquo;src&rsquo;). Регулярки для этого применяются редко, но полезно все же знать их возможности:</p>
+<pre><code class="language-phpregexp">/\&lt; *[img][^\&gt;]*[src] *= *[\&quot;\']{0,1}([^\&quot;\'\ &gt;]*)/
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">re.exec('&lt;img src=&quot;image.png&quot; alt=&quot;image1&quot;&gt;')[1]; // image.png
+</code></pre>
+<h3 id="23-css-свойства">23. CSS-свойства<a class="anchor" href="#23-css-свойства">#</a></h3>
+<p>Еще одна нетривиальная ситуация – получение свойств CSS с помощью регулярных выражений:</p>
+<pre><code class="language-phpregexp">/\s*[a-zA-Z\-]+\s*[:]{1}\s[a-zA-Z0-9\s.#]+[;]{1}/gm
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let css = ` .element {
+color: white;
+background: black;
+font-size: 16px;
+}`
+css.match(re);
+</code></pre>
+<p>Что используем:
+Флаг m в регулярных выражениях включает многострочный режим.</p>
+<h3 id="24-html-комментарии">24. HTML комментарии<a class="anchor" href="#24-html-комментарии">#</a></h3>
+<p>А это очень полезная регулярка для удаления комментариев из HTML-кода:</p>
+<pre><code class="language-phpregexp">/&lt;!--(.*?)--&gt;/
+</code></pre>
+<p>Что используем?
+Символ ?, стоящий в регулярном выражении после другого квантификатора, переводит его в ленивый режим.</p>
+<h3 id="25-title">25. Title<a class="anchor" href="#25-title">#</a></h3>
+<p>Получить заголовок веб-страницы можно с помощью такого регулярного выражения:</p>
+<pre><code class="language-phpregexp">/&lt;title&gt;([^&lt;&gt;]*?)&lt;/title&gt;/
+</code></pre>
+<h3 id="26-relnofollow">26. rel=«nofollow»<a class="anchor" href="#26-relnofollow">#</a></h3>
+<p>Важная SEO-задача, которую очень не хочется делать вручную, – добавление внешним ссылкам атрибута rel=&ldquo;nofollow&rdquo;. Обратимся к регулярным выражениям:</p>
+<p>PHP:</p>
+<pre><code class="language-php">$html = '&lt;a href=&quot;https://site.com&quot;&gt;site.com&lt;/a&gt;,
+&lt;a href=&quot;my-site.com&quot;&gt;my-site.com&lt;/a&gt;,
+&lt;a href=&quot;https://site.com&quot; rel=&quot;nofollow&quot;&gt;site.com&lt;/a&gt;';
+$re = '/(&lt;a\s*(?![^&gt;]*\brel=)([^&gt;]*\bhref=\&quot;https?:\/\/[^&quot;]+\&quot;))/';
+$result = preg_replace($re, '$1 rel=&quot;nofollow&quot;', $html);
+</code></pre>
+<p>Эта регулярка выбирает в тексте все ссылки с протоколом http/https без атрибута rel и добавляет его.</p>
+<h3 id="27-медиа-запросы">27. Медиа запросы<a class="anchor" href="#27-медиа-запросы">#</a></h3>
+<p>Если требуется проанализировать медиа-запросы CSS, воспользуйтесь этой регуляркой:</p>
+<pre><code class="language-phpregexp">/@media([^{]+)\{([\s\S]+?})\s*}/g
+</code></pre>
+<p>Что используем:
+Класс \s обозначает пробельный символ (а также таб и перевод строки), а класс \S – наоборот, любой символ кроме пробельного.</p>
+<h3 id="28-подсветка-слов">28. Подсветка слов<a class="anchor" href="#28-подсветка-слов">#</a></h3>
+<p>Полезное выражение для поиска и выделения слов в тексте:</p>
+<pre><code class="language-phpregexp">/\b(ipsum)\b/ig
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">let text = 'Lorem ipsum dolor, lorem ipsum dolor.';
+text.replace(re, '&lt;span style=&quot;background: yellow&quot;&gt;$&amp;&lt;/span&gt;')
+</code></pre>
+<p>PHP:</p>
+<pre><code class="language-php">$re = '/\b(ipsum)\b/i';
+$text = 'Lorem ipsum dolor, lorem ipsum dolor.';
+preg_replace($re, '&lt;span style=&quot;background:#5fc9f6&quot;&gt;1&lt;/span&gt;', $text);
+</code></pre>
+<p>Разумеется, слово ipsum можно заменить на любое другое слово или словосочетание</p>
+<p>Другие задачи веб-разработчика</p>
+<h3 id="29-проверка-версии-internet-explorer">29. Проверка версии Internet Explorer<a class="anchor" href="#29-проверка-версии-internet-explorer">#</a></h3>
+<p>К счастью, старый добрый IE постепенно уходит в прошлое, но он все же еще играет некоторую роль в современном вебе. Этот фрагмент кода позволяет определить версию всеми любимого браузера:</p>
+<pre><code class="language-phpregexp">/^.*MSIE [5-8](?:\.[0-9]+)?(?!.*Trident\/[5-9]\.0).*$/
+</code></pre>
+<h3 id="30-удалить-повторы">30. Удалить повторы<a class="anchor" href="#30-удалить-повторы">#</a></h3>
+<p>Регулярки дают возможность автоматически удалить случайные повторы слов без проглядывания всего текста:</p>
+<pre><code class="language-phpregexp">/(\w+)\s+\1/gi
+</code></pre>
+<p>JS:</p>
+<pre><code class="language-javascript">&quot;hello world world hello&quot;.replace(re, &quot;$1&quot;) // hello world hello
+</code></pre>
+<h3 id="31-количество-слов">31. Количество слов<a class="anchor" href="#31-количество-слов">#</a></h3>
+<p>Порой веб-разработчику необходимо определить количество слов в строке, например, для организации ключевых слов в инструментах аналитики. Сделать это можно с помощью следующих регулярок:</p>
+<pre><code class="language-phpregexp">^[^\s]*$ &amp;nbsp; // ровно одно слово
+^[^\s]*\s[^\s]*$ // ровно два слова
+^[^\s]*\s[^\s]* // два слова и больше
+^([^\s]*\s){2}[^\s]*$ // ровно три слова
+^([^\s]*\s){4, }[^\s]*$ // пять слов и больше
+</code></pre>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/dev/">dev</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/php/">php</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/js/">js</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:r.bondarenko1992@yandex.ru"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://pthnz.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/pthnz"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://pthnz.github.io/svg/github.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2023</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Полезные регулярные выражения</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#пользовательские-данные">Пользовательские данные</a></li>
+        <li><a href="#1-юзернейм">1. Юзернейм</a></li>
+        <li><a href="#2-валидация-email">2. Валидация email</a></li>
+        <li><a href="#3-номер-телефона">3. Номер телефона</a></li>
+        <li><a href="#4-надёжность-пароля">4. Надёжность пароля</a></li>
+        <li><a href="#5-почтовый-индекс-zip-code">5. Почтовый индекс (zip-code)</a></li>
+        <li><a href="#6-номер-кредитной-карты">6. Номер кредитной карты</a></li>
+        <li><a href="#7-начальные-и-конечные-пробелы">7. Начальные и конечные пробелы</a></li>
+        <li><a href="#8-дата">8. Дата</a></li>
+        <li><a href="#9-ipv4">9. IPv4</a></li>
+        <li><a href="#10-ipv6">10. IPv6</a></li>
+        <li><a href="#11-base64">11. Base64</a></li>
+        <li><a href="#12-isbn">12. ISBN</a></li>
+        <li><a href="#13-проверка-на-число">13. Проверка на число</a></li>
+        <li><a href="#14-разделитель-разрядов">14. Разделитель разрядов</a></li>
+        <li><a href="#15-цена">15. Цена</a></li>
+        <li><a href="#16-сопоставить-строку-url">16. Сопоставить строку URL</a></li>
+        <li><a href="#17-извлечение-домена">17. Извлечение домена</a></li>
+        <li><a href="#18-расширения">18. Расширения</a></li>
+        <li><a href="#19-протокол">19. Протокол</a></li>
+        <li><a href="#20-youtube">20. YouTube</a></li>
+        <li><a href="#21-hex-цвета">21. HEX-цвета</a></li>
+        <li><a href="#22-адрес-изображения">22. Адрес изображения</a></li>
+        <li><a href="#23-css-свойства">23. CSS-свойства</a></li>
+        <li><a href="#24-html-комментарии">24. HTML комментарии</a></li>
+        <li><a href="#25-title">25. Title</a></li>
+        <li><a href="#26-relnofollow">26. rel=«nofollow»</a></li>
+        <li><a href="#27-медиа-запросы">27. Медиа запросы</a></li>
+        <li><a href="#28-подсветка-слов">28. Подсветка слов</a></li>
+        <li><a href="#29-проверка-версии-internet-explorer">29. Проверка версии Internet Explorer</a></li>
+        <li><a href="#30-удалить-повторы">30. Удалить повторы</a></li>
+        <li><a href="#31-количество-слов">31. Количество слов</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+
+  
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92533311, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true,
+      ecommerce:"dataLayer"
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/92533311" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  
+</body>
+
+</html>

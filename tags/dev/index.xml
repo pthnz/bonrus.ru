@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bitrix24 Blog | @BONRUS</title>
-    <link>https://pthnz.github.io/</link>
-    <description>Recent content on Bitrix24 Blog | @BONRUS</description>
+    <title>dev on Bitrix24 Blog | @BONRUS</title>
+    <link>https://pthnz.github.io/tags/dev/</link>
+    <description>Recent content in dev on Bitrix24 Blog | @BONRUS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Tue, 08 Nov 2022 17:16:09 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Nov 2022 17:16:09 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Полезные регулярные выражения</title>
       <link>https://pthnz.github.io/blog/dev/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</link>
@@ -17,15 +17,6 @@
       <description>Пользовательские данные 1. Юзернейм Стандартный формат юзернейма – цифры, строчные буквы, символы - и _. Разумная длина – от 3 до 16 знаков. В зависимости от ваших конкретных потребностей вы можете изменять набор символов (например, разрешить символ *) и длину строки.
 /^[a-z0-9_-]{3,16}$/ JS:
 re.test(&#39;normal_login-123&#39;); // true re.test(&#39;IncorrectLogin&#39;); // false re.test(&#39;inc*rrect_l*gin&#39;); // false Что используем: Символы ^ и $ указывают на начало и конец строки, так что введенный юзернейм будет проверен на совпадение полностью от первого до последнего символа.</description>
-    </item>
-    
-    <item>
-      <title>Contacts Page</title>
-      <link>https://pthnz.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pthnz.github.io/contact/</guid>
-      <description></description>
     </item>
     
   </channel>
