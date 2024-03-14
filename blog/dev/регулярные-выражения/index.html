@@ -72,7 +72,7 @@
       "datePublished": "2022-11-08 17:16:09 \u002b0300 \u002b0300",
       "dateModified" : "2022-11-08 17:16:09 \u002b0300 \u002b0300",
       "url" : "https:\/\/pthnz.github.io\/blog\/dev\/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F\/",
-      "wordCount" : "1496",
+      "wordCount" : "1507",
       "keywords" : ["req", "регулярки", "регулярные выражения", "валидация email", "Blog"]
     }
   
@@ -406,6 +406,9 @@ preg_replace($re, '&lt;span style=&quot;background:#5fc9f6&quot;&gt;1&lt;/span&g
 ^([^\s]*\s){2}[^\s]*$ // ровно три слова
 ^([^\s]*\s){4, }[^\s]*$ // пять слов и больше
 </code></pre>
+<h3 id="32-проверка-инн-только-цифры-и-длина-до-12-символов">32. Проверка ИНН (только цифры, и длина до 12 символов)<a class="anchor" href="#32-проверка-инн-только-цифры-и-длина-до-12-символов">#</a></h3>
+<pre><code class="language-phpregexp">/(^\d{1,12}$)/
+</code></pre>
 
 
               
@@ -465,7 +468,7 @@ preg_replace($re, '&lt;span style=&quot;background:#5fc9f6&quot;&gt;1&lt;/span&g
      
 </div>
 
-            <p>© 2023</p>
+            <p>© 2024</p>
           </footer>
           </div>
       </div>
@@ -508,6 +511,7 @@ preg_replace($re, '&lt;span style=&quot;background:#5fc9f6&quot;&gt;1&lt;/span&g
         <li><a href="#29-проверка-версии-internet-explorer">29. Проверка версии Internet Explorer</a></li>
         <li><a href="#30-удалить-повторы">30. Удалить повторы</a></li>
         <li><a href="#31-количество-слов">31. Количество слов</a></li>
+        <li><a href="#32-проверка-инн-только-цифры-и-длина-до-12-символов">32. Проверка ИНН (только цифры, и длина до 12 символов)</a></li>
       </ul>
     </li>
   </ul>
