@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integration on Bitrix24 Blog | @BONRUS</title>
+    <link>https://pthnz.github.io/tags/integration/</link>
+    <description>Recent content in Integration on Bitrix24 Blog | @BONRUS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Mon, 12 Aug 2024 16:16:10 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Отправка уведомления о новом лиде в telegram</title>
+      <link>https://pthnz.github.io/blog/bitrix24/telegram-%D0%BB%D0%B8%D0%B4/</link>
+      <pubDate>Mon, 12 Aug 2024 16:16:10 +0300</pubDate>
+      
+      <guid>https://pthnz.github.io/blog/bitrix24/telegram-%D0%BB%D0%B8%D0%B4/</guid>
+      <description>Создадим telegram бота Войти в telegram, найти аккаунт @BotFather Отправить команду /newbot Указать название бота пример:NotificationB24BOT После успешного создания аккаунт @BotFather выдаст токен 731463547062:AAE9F6UczXP_UpMJj4t6DZmajrSzJ-vfCbE //Пример Переходим в Битрикс24, и добавить в профиль сотрудника поле для хранения значения ChatID для отправки сообщений в telegram В поле ChatID сотруднику необходимо указать свой ChatID (можно получить с помощью telegram бота @chatIDrobot)
+Добавляем робота для получения ChatID из профиля пользователя для отправки сообщения о новом лиде.</description>
+    </item>
+    
+  </channel>
+</rss>

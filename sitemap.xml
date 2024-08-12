@@ -3,26 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pthnz.github.io/</loc>
-    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://pthnz.github.io/tags/bitrix24/</loc>
-    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://pthnz.github.io/tags/bitrixvm/</loc>
-    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://pthnz.github.io/blog/</loc>
-    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/crm/</loc>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/integration/</loc>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://pthnz.github.io/tags/</loc>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/telegram/</loc>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/blog/bitrix24/telegram-%D0%BB%D0%B8%D0%B4/</loc>
+    <lastmod>2024-08-12T16:16:10+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/bitrixvm/</loc>
     <lastmod>2024-08-11T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

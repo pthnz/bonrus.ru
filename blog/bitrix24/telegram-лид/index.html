@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Отправка уведомления о новом лиде в telegram | Bitrix24 Blog | @BONRUS</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Настройка отправка уведомления о лиде в telegram">
+  <meta name="keywords" content="Bitrix24 , Telegram , Интеграция с лидам , CRM">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Отправка уведомления о новом лиде в telegram" />
+  <meta name="twitter:description" content="Настройка отправка уведомления о лиде в telegram"/>
+  <meta name="twitter:site" content="https://twitter.com/ruslan4109" />
+  <meta name="twitter:creator" content="https://twitter.com/ruslan4109" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="@BONRUS Blog">
+<meta name="application-name" content="@BONRUS Blog">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.c4fe4d2880cdf4bac9d178428600806cb6f771e20f1fd359495fce556693e844.css" integrity="sha256-xP5NKIDN9LrJ0XhChgCAbLb3ceIPH9NZSV/OVWaT6EQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/pthnz.github.io\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Отправка уведомления о новом лиде в telegram",
+      "headline" : "Отправка уведомления о новом лиде в telegram",
+      "description" : "Настройка отправка уведомления о лиде в telegram",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2024",
+      "datePublished": "2024-08-12 16:16:10 \u002b0300 \u002b0300",
+      "dateModified" : "2024-08-12 16:16:10 \u002b0300 \u002b0300",
+      "url" : "https:\/\/pthnz.github.io\/blog\/bitrix24\/telegram-%D0%BB%D0%B8%D0%B4\/",
+      "wordCount" : "244",
+      "keywords" : ["Bitrix24", "Telegram", "Интеграция с лидам", "CRM", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/contact/">contact</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Отправка уведомления о новом лиде в telegram</h1>
+            <time datetime="2024-08-12 16:16:10 &#43;0300 &#43;0300" class="post__date">Aug 12 2024</time> 
+          </header>
+          <article class="post__content">
+              
+<h4 id="создадим-telegram-бота">Создадим telegram бота</h4>
+<ol>
+<li>Войти в telegram, найти аккаунт <code>@BotFather</code></li>
+<li>Отправить команду <code>/newbot</code></li>
+<li>Указать название бота <code>пример:NotificationB24BOT</code></li>
+<li>После успешного создания аккаунт <code>@BotFather</code> выдаст токен</li>
+</ol>
+<pre><code>731463547062:AAE9F6UczXP_UpMJj4t6DZmajrSzJ-vfCbE //Пример
+</code></pre>
+<ol start="5">
+<li>Переходим в Битрикс24, и добавить в профиль сотрудника поле для хранения значения ChatID для отправки сообщений в telegram</li>
+</ol>
+<p><img src="/images/telegram-notification/create-string-userfield.png" alt="create-user-fields"></p>
+<p><img src="/images/telegram-notification/create-userfield.png" alt="create-user-fields"></p>
+<ol start="6">
+<li>
+<p>В поле ChatID сотруднику необходимо указать свой ChatID (можно получить с помощью telegram бота <code>@chatIDrobot</code>)</p>
+</li>
+<li>
+<p>Добавляем робота для получения ChatID из профиля пользователя для отправки сообщения о новом лиде. Перейти в раздел со списком лидов выбрать &ldquo;Роботы&rdquo;</p>
+</li>
+</ol>
+<p><img src="/images/telegram-notification/lead-robots.png" alt="lead-robots.png"></p>
+<ol start="8">
+<li>Кликнуть на &ldquo;+&rdquo; и в поле поиска указать название робота &ldquo;Получить информацию о сотруднике&rdquo;</li>
+</ol>
+<p><img src="/images/telegram-notification/lead-robots-chatid.png" alt="lead-robots-chatid.png"></p>
+<ol start="9">
+<li>В поле выбора сотрудника настроек робота, указываем &ldquo;Ответственный&rdquo;</li>
+</ol>
+<p><img src="/images/telegram-notification/lead-robots-responsible.png" alt="lead-robots-responsible.png"></p>
+<ol start="10">
+<li>Добавляем робота &ldquo;Исходящий вебхук&rdquo;, в поле &ldquo;Хендлер&rdquo; указываем следующий URL</li>
+</ol>
+<pre><code class="language-phpregexp">https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&amp;text={text}&amp;parseMode=html
+</code></pre>
+<p><strong>Описание:</strong></p>
+<p>bot_token - токен который выдан <code>@BotFather</code></p>
+<p>chat_id - ChatID который будет подставлен из профиля пользователя</p>
+<p>text - текст сообщения для отправки</p>
+<ol start="11">
+<li>Для удобства текст отправляемого сообщения добавить в глобальную переменную.</li>
+</ol>
+<p><img src="/images/telegram-notification/lead-robots-var.png" alt="lead-robots-var.png"></p>
+<p><img src="/images/telegram-notification/lead-robots-var-add.png" alt="lead-robots-var-add.png"></p>
+<p><img src="/images/telegram-notification/lead-robots-var-add(example).png" alt="lead-robots-var-add(example).png"></p>
+<ol start="12">
+<li>Перед роботом &ldquo;Исходящий вебхук&rdquo;, добавить робота &ldquo;Изменить переменную&rdquo; для формирования сообщения которое мы отправим в уведомление.</li>
+</ol>
+<p><img src="/images/telegram-notification/lead-robots-var-change.png" alt="lead-robots-var-change.png"></p>
+<ol start="13">
+<li>В роботе выбираем переменную для хранения которую создали в п.11 и заполняем текст</li>
+</ol>
+<p><strong>Пример:</strong></p>
+<pre><code class="language-phpregexp">Создан новый лид №{{ID}}%0AСсылка для просмотра лида: https:/*.bitrix24.ru{{Ссылка на элемент}}
+</code></pre>
+<p><strong>Описание:</strong></p>
+<p>%0A - символ переноса строки</p>
+<p>https://*.bitrix24.ru - адрес вашего портала Битрикс24</p>
+<p>{{ID}} - ID элемента (в текущем контексте ID лида)</p>
+<p>{{Ссылка на элемент}} - ссылка на элемент</p>
+<p><img src="/images/telegram-notification/lead-robots-vars-message.png" alt="lead-robots-vars-message.png"></p>
+<p><strong>Итог:</strong>
+После добавления лида в ручном или автоматическом режиме, получаем уведомление в Telegram.</p>
+<p><img src="/images/telegram-notification/lead-telegram-notification.png" alt="lead-telegram-notification.png"></p>
+<hr>
+<p><strong>Ограничения:</strong></p>
+<ol>
+<li>Для предоставления возможности отправки сообщения боту, сотруднику необходимо открыть чат с ботом в Telegram и нажать кнопку &ldquo;Начать&rdquo;.</li>
+</ol>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/bitrix24/">Bitrix24</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/telegram/">Telegram</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/integration/">Integration</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://pthnz.github.io/tags/crm/">CRM</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://pthnz.github.io/blog/bitrix24/settings-smtp/">
+        <span class="pagination__label"></span>
+        <span class="pagination__title">Настройка smtp отправителя в Битрикс24 через почтовый сервис Яндекс</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/pthnz"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://pthnz.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/ruslan4109"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://pthnz.github.io/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2024</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+
+  
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92533311, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true,
+      ecommerce:"dataLayer"
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/92533311" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  
+</body>
+
+</html>
