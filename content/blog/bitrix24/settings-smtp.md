@@ -4,7 +4,7 @@ date: 2024-08-11T00:00:00+03:00
 slug: "settings-smtp"
 description: "Настройка почты в Битрикс24 (коробка)"
 keywords: [Bitrix24,BitrixVM,Настройка smtp в Битрикс24, Битрикс24 настройка почты]
-tags: [Bitrix24,BitrixMV,Configuration]
+tags: [Bitrix24,BitrixVM]
 draft: false
 math: false
 toc: true
