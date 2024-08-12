@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BitrixVM on Bitrix24 Blog | @BONRUS</title>
+    <link>https://pthnz.github.io/tags/bitrixvm/</link>
+    <description>Recent content in BitrixVM on Bitrix24 Blog | @BONRUS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/tags/bitrixvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Настройка smtp отправителя в Битрикс24 через почтовый сервис Яндекс</title>
+      <link>https://pthnz.github.io/blog/bitrix24/settings-smtp/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0300</pubDate>
+      
+      <guid>https://pthnz.github.io/blog/bitrix24/settings-smtp/</guid>
+      <description>Возможные варианты отправки писем из Битрикс24/БУС через локальный sendmail или postfix. через внешний SMTP-сервер без авторизации. через внешний сервер с авторизацией путем замены функции отправки почты. 1. Включение smtp-сервера Для включения необходимо добавить директиву в файл /bitrix/.settings.php
+&#39;smtp&#39; =&amp;gt; array ( &#39;value&#39; =&amp;gt; array( &#39;enabled&#39; =&amp;gt; true, &#39;debug&#39; =&amp;gt; true, &#39;log_file&#39; =&amp;gt; &#39;/var/mailer.log&#39;, ), ), Описание параметров:
+&amp;rsquo;enable&amp;rsquo; - Включить smtp;
+&amp;lsquo;debug&amp;rsquo; - Включение отладки (отображает ошибки, которые могут возникнуть при отправке сообщений);</description>
+    </item>
+    
+  </channel>
+</rss>

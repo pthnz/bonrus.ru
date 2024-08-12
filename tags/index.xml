@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Tue, 08 Nov 2022 17:16:09 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitrix24</title>
+      <link>https://pthnz.github.io/tags/bitrix24/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0300</pubDate>
+      
+      <guid>https://pthnz.github.io/tags/bitrix24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BitrixVM</title>
+      <link>https://pthnz.github.io/tags/bitrixvm/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0300</pubDate>
+      
+      <guid>https://pthnz.github.io/tags/bitrixvm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dev</title>
       <link>https://pthnz.github.io/tags/dev/</link>

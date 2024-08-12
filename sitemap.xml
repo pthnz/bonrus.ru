@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pthnz.github.io/</loc>
-    <lastmod>2022-11-08T17:16:09+03:00</lastmod>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/bitrix24/</loc>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/bitrixvm/</loc>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://pthnz.github.io/blog/</loc>
-    <lastmod>2022-11-08T17:16:09+03:00</lastmod>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/tags/</loc>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://pthnz.github.io/blog/bitrix24/settings-smtp/</loc>
+    <lastmod>2024-08-11T00:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -23,11 +43,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://pthnz.github.io/tags/php/</loc>
-    <lastmod>2022-11-08T17:16:09+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://pthnz.github.io/tags/</loc>
     <lastmod>2022-11-08T17:16:09+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

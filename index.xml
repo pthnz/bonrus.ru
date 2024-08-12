@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Tue, 08 Nov 2022 17:16:09 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0300</lastBuildDate><atom:link href="https://pthnz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Настройка smtp отправителя в Битрикс24 через почтовый сервис Яндекс</title>
+      <link>https://pthnz.github.io/blog/bitrix24/settings-smtp/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0300</pubDate>
+      
+      <guid>https://pthnz.github.io/blog/bitrix24/settings-smtp/</guid>
+      <description>Возможные варианты отправки писем из Битрикс24/БУС через локальный sendmail или postfix. через внешний SMTP-сервер без авторизации. через внешний сервер с авторизацией путем замены функции отправки почты. 1. Включение smtp-сервера Для включения необходимо добавить директиву в файл /bitrix/.settings.php
+&#39;smtp&#39; =&amp;gt; array ( &#39;value&#39; =&amp;gt; array( &#39;enabled&#39; =&amp;gt; true, &#39;debug&#39; =&amp;gt; true, &#39;log_file&#39; =&amp;gt; &#39;/var/mailer.log&#39;, ), ), Описание параметров:
+&amp;rsquo;enable&amp;rsquo; - Включить smtp;
+&amp;lsquo;debug&amp;rsquo; - Включение отладки (отображает ошибки, которые могут возникнуть при отправке сообщений);</description>
+    </item>
+    
     <item>
       <title>Полезные регулярные выражения</title>
       <link>https://pthnz.github.io/blog/dev/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</link>
