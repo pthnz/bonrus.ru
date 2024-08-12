@@ -22,11 +22,11 @@ copyright = "© {year}"
   # Follow the Hugo date/time format reference here: 
   # https://gohugo.io/functions/format/#gos-layout-string
   dateFormat = "Jan 2 2006"
-
+  description = "This is the fallback description if nothing is specified"
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
-  #twitter = "https://twitter.com/ruslan4109"
+  twitter = "https://twitter.com/ruslan4109"
   github = "https://github.com/pthnz"
-  email = "mailto:r.bondarenko1992@yandex.ru"
+  # email = "mailto:r.bondarenko1992@yandex.ru"
   # mastodon = "https://mastodon.social/@nickname"
   # facebook = "https://facebook.com/<your handle>"
   # gitlab = "https://gitlab.com/bonrus"
@@ -37,7 +37,7 @@ copyright = "© {year}"
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Mastodon", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Email", "GitHub"]
+  iconOrder = ["GitHub", "Twitter"]
 
   # Metadata for Twitter cards, defaults to params.twitter
   # twitterSite = "@ruslan4109"
